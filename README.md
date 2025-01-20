@@ -12,8 +12,8 @@ Repositorio de la formación IFCD65
 
 ## Documentación del curso
 
-- BOE:
-- Calendario:
+- [BOE del IFCD65](https://sede.sepe.gob.es/es/portaltrabaja/resources/pdf/especialidades/IFCD65.pdf)
+- Calendario: **pendiente**
 - Carpeta en Google Drive (compartida en las sesiones)
 
 ## Front-end
@@ -30,8 +30,18 @@ Repositorio de la formación IFCD65
 
 ### HTML
 
-
+- Libro: TBD
+- Diapositivas: TBD
+- W3schools: TBD
 
 ### CSS
 
+- Libro: TBD
+- Diapositivas: TBD
+- W3schools: TBD
+
 ### JS 
+
+- Libro: TBD
+- Diapositivas: TBD
+- W3schools: TBD
