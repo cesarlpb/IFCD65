@@ -21,7 +21,9 @@ Repositorio de la formación IFCD65
 ### Control de cambios (Git y Github)
 
 - [Libro de midudev](https://aprendiendogit.com/)
-- Repositorio de git: [learn-git](https://github.com/cesarlpb/learn-git)
+- Repositorio de git: 
+  - [learn-git](https://github.com/cesarlpb/learn-git), [en rama ifcd65](https://github.com/cesarlpb/learn-git/tree/ifcd65)
+    - [ejercicios de Git](https://github.com/cesarlpb/learn-git/tree/ifcd65/ejercicios)
 - Diapositivas: TDB
 - Libro oficial:
   - [Libro oficial en español](https://git-scm.com/book/es/v2)
