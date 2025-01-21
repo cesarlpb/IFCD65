@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Identificación de los elementos de Internet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide 0 -->
+            <!-- Slide de presentación del curso -->
+            <section>
+                <h1>Front End Web Developer</h1>
+                <p>Tema: Control de Cambios</p>
+                <p><strong>Formador:</strong> César Patiño</p>
+                <small>2025</small>
+            </section>
+
+            <!-- Slide 1 -->
+ 
+            <section data-markdown>
+              <textarea data-template>
+                ---
+
+                # ¿Qué es el control de cambios y por qué me cambia la vida?
+
+                - El control de cambios nos permite hacer un seguimiento de 
+                cada edición de los archivos que usamos para trabajar.
+                - Se incluye creación de archivos, modificación, eliminación, renombre, etc.
+                - Se usa mucho en programación porque mayormente editamos archivos de texto.
+
+                ---
+                
+                # ¿Qué es Git?
+
+                - Software de código abierto, hecho originalmente por Linus Torvalds.
+                - Se puede usar gratis y viene instalado en algunas distribuciones de Linux.
+                - Disponible en Windows y Mac también.
+                - Optimizado para funcionar rápido y ocupar poco espacio.
+                - Descentralizado: puedes tener tantas copias de un repositorio como necesites.
+
+                ---
+
+                # Cómo funciona Git
+
+                - **Repositorios:** son carpetas con una subcarpeta `.git` donde se 
+                controlan los cambios (no hay que modificar esta carpeta a mano, 
+                se hace todo mediante comandos de git)
+                - Repositorios **locales** (en tu ordenador) o **remotos** (en un servidor)
+                - Cada repositorio tiene al menos una rama, que suele ser `main` por defecto
+
+                ---
+                
+                # Estados en Git
+
+                - **Modified (modificado)**: se ha detectado un cambio en un documento (previo a staging)
+                - **Staged** (preparado)**: el usuario ha colocado el documento en la *zona de staging* (preparación) (previo a committed)
+                - **Committed (confirmado)**: el documento se ha "subido" o se ha confirmado el cambio -> se añade al historial de `git log`
+                
+                ---
+              </textarea>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+    <script>
+      Reveal.initialize({
+        plugins: [RevealMarkdown],
+      });
+    </script>
+</body>
+</html>
