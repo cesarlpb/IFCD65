@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Identificación de los elementos de Internet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide 0 -->
+            <!-- Slide de presentación del curso -->
+            <section>
+                <h2>Control de Cambios</h2>
+                <h3>Trabajo Local con Git</h3>
+                <hr>
+                <p>César Patiño</p>
+                <small>2025</small>
+            </section>
+
+            <!-- Slide 1 -->
+ 
+            <section data-markdown>
+              <textarea data-template>
+
+                # Git de forma local
+
+                - Git, al ser un software de control de cambio, permite trabajar offline y en local (en tu ordenador o dispositivo en tu red local)
+                - No es necesario subir el código fuente o proyecto a la nube
+                - A menudo, subir el repositorio a una nube tiene ventajas pero se puede usar Git al completo sin esta opción o usando servidores propios
+                ---
+
+                # Crear repositorio
+
+                ```bash
+                mkdir repo # creas la carpeta
+                cd repo    # entramos en la carpeta
+                git init   # creamos un repositorio vacío
+                ```
+
+                O al revés:
+
+                ```bash
+                git init repo # creas un repositorio en una carpeta "repo"
+                cd repo       # entras en esa carpeta
+                ```
+
+                Para abrir la carpeta con VS Code desde terminal:
+
+                ```bash
+                code repo # cambiar "repo" por ruta a la carpeta o nombre
+                ```
+
+                ---
+
+                # Rama inicial
+
+                Actualmente, la rama inicial de un repositorio es `main` pero se 
+                puede cambiar cuando se crea, después, 
+                o configurar la rama por defecto en nuestra máquina:
+
+                ```bash
+                git init repo --initial-branch=nombre-de-tu-rama-inicial
+                ```
+
+                En config:
+
+                ```bash
+                git config --global init.defaultBranch nombre-de-tu-rama-inicial
+                ```
+
+                ---
+
+                # ¿Cómo sabemos que una carpeta es repositorio?
+
+                - Una comprobación simple es entrar en la carpeta y buscar una subcarpeta `.git`
+                - No se debe borrar la carpeta `.git` ya que puedes perder el historial del repositorio 
+                - Como es una carpeta oculta, es posible que debas habilitar esta opción en tu sistema
+
+                En sistemas Unix:
+
+                ```bash
+                ls -a
+                ```
+
+                En Windows:
+
+                ```cmd
+                  dir /ah 
+                ```
+                
+                Más información: https://www.computerhope.com/issues/ch001039.htm
+
+                ---
+
+                # ¿Cómo sabemos que una carpeta es repositorio? (parte 2)
+
+                Otra opción es ejecutar algún comando de git en el posible repositorio:
+
+                ```bash
+                git log
+                git status
+                # etc
+                ```
+
+
+                --- 
+
+                # Directorio de Trabajo
+            
+
+              </textarea>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+    <script>
+      Reveal.initialize({
+        plugins: [RevealMarkdown],
+      });
+    </script>
+</body>
+</html>
