@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Identificación de los elementos de Internet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide 0 -->
+            <!-- Slide de presentación del curso -->
+            <section>
+                <h2>Control de Cambios</h2>
+                <h3>Instalación y Configuración de Git</h3>
+                <hr>
+                <p>César Patiño</p>
+                <small>2025</small>
+            </section>
+
+            <!-- Slide 1 -->
+ 
+            <section data-markdown>
+              <textarea data-template>
+
+                # Comprobación de Git instalado
+
+                1. Abrimos un terminal (CMD en Windows)
+                2. Ejecutamos el comando `git` o `git -v`
+                3. Si no vemos un error o algo como 
+                "comando no encontrado" -> tenemos Git
+                ---
+
+                # Posibles problemas
+
+                - Si el comando no es reconocido, es posible que no tengas Git instalado
+                  - Los puedes descargar desde: https://git-scm.com/downloads
+                  - De primeras, aceptar hasta finalizar y a veces es necesario reiniciar (sobre todo en Windows) para que el comando `git` funcione
+                - Podría no estar `git` en variables de entorno o `PATH`
+                  - Windows: https://technobrice.com/es/tech/larue/how-to-set-environment-variables-in-windows-11/
+                  - Mac/Linux: https://stackoverflow.com/questions/550490/how-can-i-put-home-opt-git-bin-to-my-path
+                    - `export git=$(which git)`
+                
+                ---
+
+                # Configuraciones
+
+                El nombre y el email son necesarios para los commits:
+
+                ```
+                git config --global user.name "Tu nombre"
+                git config --global user.email "Tu email"
+                ```
+
+                Más información en la [solución del ejercicio 05 de learn-git](https://github.com/cesarlpb/learn-git/blob/ifcd65/soluciones/05.solucion.md)
+
+                ---
+
+                # Editor por defecto
+
+                En la formación vamos a usar VS Code así que lo dejamos como editor por defecto para Git:
+
+                ```
+                git config --global core.editor "code"
+                ```
+                ---
+
+                # Comprobación de la config Actualmente
+
+                ```bash
+                git config --list # general
+                
+                git config --system --list # sistema
+                git config --global --list # global
+                git config --local --list  # local
+
+                # A partir de git 2.26.0:
+                git config --list --show-scope # muestra el alcance o scope de la config
+                ```
+                ---
+              </textarea>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+    <script>
+      Reveal.initialize({
+        plugins: [RevealMarkdown],
+      });
+    </script>
+</body>
+</html>
