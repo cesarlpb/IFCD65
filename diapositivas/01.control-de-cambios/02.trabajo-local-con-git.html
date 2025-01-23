@@ -200,6 +200,53 @@
                 ![Commit desde Terminal](./commit-desde-terminal.png)
 
                 ---
+
+                # git restore
+                
+                Deshacer un cambio o revertir archivo(s) a un estado anterior
+
+                Si hacemos un cambio no deseado en `index.html`:
+
+                ```bash
+                # restauramos index a la versión anterior
+                git restore index.html
+
+                # restaurar todo el directorio de trabajo
+                git restore .
+                
+                # restaurar todos los archivos terminados en *.html
+                git restore '*.html'
+                ```
+
+                **Nota:** git restore existe desde la versión `2.23`. 
+                En el momento de la edición del documento, se usa la versión 
+                `2.39.2`.
+
+                ---
+
+                # git clean
+
+                - Sirve para borrar archivos o directorios que no estamos siguiendo en un commit anterior
+                - Permite hacer `dry-run`, es decir, ver el resultado del comando sin ejecutarlo
+
+                ```bash
+
+                git clean -f # fuerza el borrado sin confirmar 🚨¡¡PELIGRO!!🚨
+
+                git clean -d # borra también carpetas 🚨¡¡PELIGRO!!🚨
+
+                git clean -i # modo interactivo (pregunta antes de borrar)
+
+                git clean -n # ejecuta el dry run (no borra nada)
+                ```
+
+                ---
+
+                # Ejemplos de uso de git clean
+
+                ![git clean](./git-clean.png)
+
+
               </textarea>
             </section>
 
