@@ -14,7 +14,7 @@
 
 ### 20.01
 
-- Git -> tema del libro "Un poco de teoría"
+- Git -> Tema del libro de Git: "Un poco de teoría"
   - Qué es Git y Github
   - Cómo funciona
   - Primeros pasos del ejercicio 00: 
@@ -30,7 +30,8 @@
 
 ## 22.01
 
-- Teoría de Git: instalación, configuración, trabajo en local
+- Teoría de Git: instalación, configuración, trabajo en local 
+  -> Temas "Instalando y Configurando Git" y "Trabajando con Git de forma local" del libro de Git
 - Ejercicios del 03 al 05 en [learn-git](https://github.com/cesarlpb/learn-git)
 - [Transcripción con IA](./transcripciones/22.01.md)
 
