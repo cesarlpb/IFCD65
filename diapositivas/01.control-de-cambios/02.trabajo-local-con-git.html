@@ -24,6 +24,7 @@
             <section data-markdown>
               <textarea data-template>
 
+                <!-- Tema Trabajando con Git de forma local, págs. 31 - 60-->
                 # Git de forma local
 
                 - Git, al ser un software de control de cambio, permite trabajar offline y en local (en tu ordenador o dispositivo en tu red local)
@@ -96,7 +97,8 @@
 
                 # ¿Cómo sabemos que una carpeta es repositorio? (parte 2)
 
-                Otra opción es ejecutar algún comando de git en el posible repositorio:
+                Otra opción es ejecutar algún comando de git en el posible 
+                repositorio:
 
                 ```bash
                 git log
@@ -104,12 +106,75 @@
                 # etc
                 ```
 
-
-                --- 
+                Cualquier comando de git nos puede dar una pista.
+                
+                ---
 
                 # Directorio de Trabajo
-            
+                <!-- página 34 -->
+                Debemos seleccionar una carpeta para organizar nuestros proyectos.
 
+                La carpeta que tiene nuestro repositorio se denomina **carpeta o directorio de trabajo**.
+
+                Normalmente, abrimos esta carpeta en VS Code.
+
+                Para abrir la carpeta podemos ejecutar `code carpeta` 
+                o desde VS Code `Archivo > Abrir carpeta`
+
+                ---
+                
+                # Ejemplo Práctico
+                ## (para iniciar proyecto nuevo)
+
+                En un terminal:
+
+                ```bash
+                mkdir repo
+                cd repo
+                git init
+                code .
+                ```
+
+                - Crear carpeta "repo"
+                - Entrar en carpeta
+                - Crear repositorio (vacío)
+                - Abrir carpeta "repo" en VS Code
+
+                ---
+                # Carpeta "repo" abierta en VS Code
+
+                ![carpeta repo en VS Code](./repo-en-vs-code.png)
+
+                ---
+
+                # Ejemplo Práctico (parte 2)
+
+                - Creamos un `README.md`
+                - Creamos un `index.html`
+                
+                (por el momento, el contenido de los archivos da igual)
+
+                - Añadimos ambos a `staging`
+                - Confirmamos commits
+
+                ---
+                # Cambios de Ejemplo
+
+                ![Cambios de ejemplo](./cambios-index-readme.png)
+                ---
+                # Ejemplo mensaje commit sin confirmar
+
+                ![Ejemplo de mensaje para commit](./ejemplo-mensaje-commit.png)
+                ---
+                # Primer commit confirmado
+
+                ![Primer commit en repo](./primer-commit.png)
+                ---
+                # Ejemplo con dos commits
+
+                ![Ejemplo dos commits](./ejemplo-dos-commits.png)
+                ---
+                
               </textarea>
             </section>
 
