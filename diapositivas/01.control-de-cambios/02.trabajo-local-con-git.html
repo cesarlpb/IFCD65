@@ -315,8 +315,92 @@
 
                 ---
 
-                
+                # Commits
 
+                Commits o confirmaciones son puntos de guardado que contienen toda
+                la información del repositorio en el momento en el que se hacen.
+
+                - Hay metadatos como el autor, la fecha, etc.
+                - Se guardan los cambios de los archivos que sigue Git -> lo que se ignora (`.gitignore`) no se incluye
+                - Se puede volver a cualquier commit anterior desde terminal o navegando en Github
+
+                ---
+
+                # Cómo hacer commits
+
+                ```bash
+                
+                # comprobamos qué tenemos en staging
+                git status
+
+                # añadimos about.html a staging
+                git add about.html
+
+                # creamos el commit con un mensaje control
+                git commit -m "Creamos about.html"
+
+                # comprobamos el estado y vemos el commit
+                git status
+                git log
+                ```
+
+                - Nota: se sale del git log con `Q`
+                - Puedes moverte con las flechas arriba / abajo en el log
+
+                ---
+
+                # Ejemplo de creación de Commit
+
+                ![creamos un commit](./creamos-commit-local.png)
+
+                <!-- Saltamos páginas 49 y 50
+                git commit -am ... solo sirve con archivos anteriormente
+                añadidos en el historial.
+                
+                Personalmente, no lo uso, siempre lo hago mediante staging :)
+                -->
+
+                # Buenas Prácticas para hacer commits
+
+                1. Usar verbos imperativos como: Añadir, Arreglar, Borrar, etc.
+                ```
+                Crear index.html
+                Añadir about.html
+                ```
+                2. No usar puntos ni puntos suspensivos en títulos.
+                3. Máximo 50 caracteres para el título
+
+                ```bash
+                git commit -m "Esto es un título"
+                git commit -m "- Esto es un título de un commit de 50 caracteres-"
+                ```
+
+                ---
+
+                # Buenas Prácticas para hacer commits (parte 2)
+
+                4. Añadimos todo el contexto necesario en el cuerpo del mensaje
+
+                ```bash
+
+                git commit -m "Título" -m "Esto es el cuerpo del mensaje donde
+                podemos añadir más información del commit que estamos haciendo
+                para que se entienda mejor."
+                ```
+
+                5. Se pueden añadir prefijos para informar del tipo de cambio
+
+                ```bash
+
+                feat(frontend): Añadir navbar en landing page
+                fix(web): Corregir responsive de homepage
+                ```
+
+                6. Considerar utilidades como husky para ayudar en commits
+                
+                ---
+
+                
               </textarea>
             </section>
 
