@@ -483,7 +483,75 @@
 
                 ---
 
-                # 
+                # Ignorar archivos (no hacer seguimiento)
+
+                Archivos que se pueden ignorar:
+
+                - Archivos que tengan credenciales o llaves de API (no deberías subirlas al
+                repositorio, simplemente inyectarlas por variable de entorno)
+                - Carpetas de configuración de tu editor (/.vscode)
+                - Archivos de registro (log files)
+                - Archivos de sistema como .DS_Store
+                - Carpetas generadas con archivos estáticos o compilaciones como /dist o /build
+                - Dependencias que pueden ser descargadas (/node_modules)
+                - Coverage del testing (/coverage)
+
+                ---
+
+                # Ignorar archivos (no hacer seguimiento) (parte 2)
+
+                ## ¿Por qué ignorar estas cosas?
+
+                Hay varios motivos posibles:
+                
+                - **Seguridad:** contraseñas no deben llegar a Github
+                - **Espacio:** carpetas como `node_modules`
+                - **Binarios o ejecutables:** pueden no servir en otros equipos
+                - **Otros motivos:** dependiendo del caso o de las indicaciones 
+                de trabajo, puede haber más razones para no subir ciertos archivos
+
+                ---
+
+                # .gitignore
+
+                - Archivo para indicar a Git qué cosas debe dejar de seguir
+                - Puedes ignorar archivos o carpetas haciendo 
+                click derecho > Añadir a `.gitignore` (desde Control de Código Fuente)
+                - También, puedes generar un `.gitignore` desde https://www.toptal.com/developers/gitignore
+                - Los archivos o carpetas ignorados **aparecen en gris** en VS Code
+
+                ---
+
+                # Ejemplo de archivo ignorado
+
+                ![archivo ignorado en VS Code](./archivo-ignorado.png)
+
+                <!-- Por el momento, en front-end no vamos a hacer una 
+                 configuración global de .gitignore => saltamos págs. 58 y 59 -->
+
+                # Dejar de seguir un archivo o carpeta
+
+                Hay dos opciones:
+                - Borrar el archivo o carpeta y hacer un commit con esos cambios
+                - Ejecutar el comando siguiente para mantener el archivo o carpeta
+                pero sin hacerle más seguimiento en Git:
+
+                ```bash
+                git rm --cached ignorado.html
+                ```
+                
+                Hay que hacer un commit posterior para comprobar que se deja de seguir.
+
+                # Ejemplo de untrack de temp.html
+
+                Dejamos de seguir el archivo
+
+                ![dejar de seguir temp.html](./untrack-temp.png)
+
+                ---
+
+                
+
               </textarea>
             </section>
 
