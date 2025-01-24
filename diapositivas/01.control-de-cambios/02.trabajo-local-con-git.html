@@ -400,7 +400,90 @@
                 
                 ---
 
+                # HEAD
+
+                - Es el puntero o la referencia de "dónde" estamos situados en el
+                historial del repositorio
+                - Por defecto, se ubica en el último commit de la rama en la que 
+                estamos trabajando
+                - Se puede mover el HEAD a un commit anterior o posterior para 
+                ver el proyecto en ese momento
+
+                Comandos para ver información del HEAD:
+                  ```bash
+                  git symbolic-ref HEAD # saca el valor de referencia del HEAD
+
+                  git rev-parse HEAD # saca el commit donde está el HEAD
+                ```
                 
+                ---
+
+                # git reset --soft
+
+                ## **Disclaimer:** De verdad espero que sepas lo que haces.
+
+                ```bash
+                # retrocede el HEAD un commit:
+                git reset --soft HEAD~1
+                # si necesitas retroceder más, cambia el número
+
+                # para volver a avanzar el HEAD una posición sin especificar hash de commit:
+                git reset --soft HEAD@{1}
+                ```
+                
+                `--soft` nos """garantiza""" que no perderemos nada de los archivos.
+                Aún así, tened cuidado al probar estos comandos.
+
+                --- 
+
+                # 🚨 git reset --hard 🚨
+
+                Borra los cambios y resetea al commit anterior:
+
+                ```bash
+                git reset --hard HEAD~1
+                ```
+
+                > Un gran poder conlleva una gran responsabilidad -- Tío Ben.
+
+                ---
+
+                # Corregir el mensaje del último commit
+
+                ```bash
+                git commit --amend -m "Este es el mensaje correcto"
+                ```
+
+                - Solo sirve para editar el **último** commit
+                - Permite cambiar los mensajes
+                - No cambia el contenido (archivos añadidos) del commit
+
+                # Ejemplo de git commit --amend
+
+                ![git commit --amend](./git-commit-amend.png)
+
+                # ¿Y si añadimos los archivos incorrectos?
+
+                En caso de añadir los archivos incorrectos a un commit sería 
+                necesario hacer `git reset --soft HEAD~1` (o la cantidad de commits necesarios)
+                y volveríamos a añadir los cambios necesarios desde ese punto.
+
+                El flujo sería así:
+
+                1. Retroceder algunos commits
+                2. Volver añadir los cambios y archivos
+                3. Hacer otro commit para actualizar
+
+                El commit "incorrecto" se cambia por el "correcto" en local 
+                **SOLO SI** no se ha subido al remoto con `git push`.
+      
+                # Ejemplo de corrección en historial
+
+                ![corrección en historial](./correccion-en-historial.png)
+
+                ---
+
+                # 
               </textarea>
             </section>
 
