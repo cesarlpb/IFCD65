@@ -246,6 +246,72 @@
 
                 ![git clean](./git-clean.png)
 
+                ---
+                
+                <!-- continuar en pág 40 -->
+
+                # Ejemplo Práctico
+
+                ## añadir archivo al staging
+                
+                En un repositorio, creamos un archivo `html` y ejecutamos alguno de los siguientes comandos:
+
+                ```bash
+                # añadir un archivo html por nombre:
+                git add about.html
+                
+                # añadir todos los html:
+                git add *.html
+
+                # añadir todos los de la carpeta actual:
+                git add .
+                ```
+
+                ---
+
+                # About en Staging
+
+                ![about.html en staging](./about-en-staging.png)
+
+                ---
+
+                # Comandos para añadir archivos
+
+                ![comandos para añadir archivos](./añador-archivos-a-staging.png)
+
+                ---
+
+                # Comandos para añadir carpeta
+
+                ![comandos para añadir carpeta](./añadir-carpeta-a-staging.png)
+
+                ---
+                
+                # Quitar archivos de staging
+
+                Es suficiente con hacer un reset del archivo (no lo borra)
+
+                ```bash
+
+                # añadimos about.html a staging
+                git add about.html
+
+                # comprobamos que está en staging (sale en verde)
+                # git status
+
+                # quitamos el archivo del staging
+                git reset about.html
+
+                # comprobamos que ya NO está en staging
+                git status
+
+                ```
+
+                ---
+
+                # Quitar un archivo de staging
+
+                ![quitar de staging](./añadir-carpeta-a-staging.png)
 
               </textarea>
             </section>
