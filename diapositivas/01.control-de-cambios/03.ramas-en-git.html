@@ -72,6 +72,28 @@
 
                 ---
 
+                <!-- Los ejemplos anteriores abarcan las páginas 71 a 77 -->
+
+                # git merge y tipos de merge
+
+                - **Fast-forward:** con el mismo historial, se fusiona la rama 
+                origen en la rama destino y el historial queda lineal **sin commit de merge**.
+
+                - **No Fast-forward:** se hace un commit de merge con el texto "Merge branch '<branch>'"
+                  para unir los historiales de las ramas.
+
+                - *+Squash:** se hace un commit que une todos los cambios en la rama destino. 
+                El historial queda más limpio.
+                ---
+
+                ### Ejemplo de 3 modos de merge
+
+                - [Historial](./git-log-4.md)
+                - Repositorio de ejemplo -> `merge.zip` (en releases)
+
+                ![Ejemplo de 3 modos de merge](./ejemplo-3-modos-de-merge.png)
+
+                ---
               </textarea>
             </section>
 
