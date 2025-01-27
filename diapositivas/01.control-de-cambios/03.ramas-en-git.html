@@ -74,7 +74,7 @@
 
                 <!-- Los ejemplos anteriores abarcan las páginas 71 a 77 -->
 
-                # git merge y tipos de merge
+                ### git merge y tipos de merge
 
                 - **Fast-forward:** con el mismo historial, se fusiona la rama 
                 origen en la rama destino y el historial queda lineal **sin commit de merge**.
@@ -82,7 +82,7 @@
                 - **No Fast-forward:** se hace un commit de merge con el texto "Merge branch '<branch>'"
                   para unir los historiales de las ramas.
 
-                - *+Squash:** se hace un commit que une todos los cambios en la rama destino. 
+                - **Squash:** se hace un commit que une todos los cambios en la rama destino. 
                 El historial queda más limpio.
                 ---
 
@@ -92,6 +92,51 @@
                 - Repositorio de ejemplo -> `merge.zip` (en releases)
 
                 ![Ejemplo de 3 modos de merge](./ejemplo-3-modos-de-merge.png)
+
+                ---
+
+                # Modificar mensaje de git merge
+
+                Existe la opción de editar mensaje y de no hacer commit cuandos 
+                se hace un `git merge`:
+
+                
+                ```bash
+                # Abre el editor antes de hacer el commit
+                git merge --edit
+                ```
+
+                ```bash
+                # Evita que haga commit automáticamente
+                # y te deja los cambios preparados para hacer commit
+                git merge --no-commit
+                ```
+                ---
+
+                <!-- Hasta aquí páginas 77 a 83 del libro -->
+
+                # Conflictos en Git
+
+                - [Historial de comandos](./git-log-5.md)
+                - Ejemplo en archivo `conflictos.zip`
+
+                ---
+
+                ### Visualización del conflicto en VS Code
+
+                ![Resolución de conflictos de merge](./conflicto-de-merge-1.png)
+
+                ---
+
+                ### Resolvemos conflicto en VS Code
+
+                ![Resolución de conflictos de merge](./conflicto-de-merge-2.png)
+
+                ---
+
+                ### Conflicto resuelto
+
+                ![Resolución de conflictos de merge](./conflicto-de-merge-3.png)
 
                 ---
               </textarea>
