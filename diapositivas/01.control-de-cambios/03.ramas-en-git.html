@@ -5,6 +5,11 @@
     <title>Identificación de los elementos de Internet</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+    <style>
+      p + img, p > img, p:has(img) {
+        margin:0!important;
+      }
+    </style>
 </head>
 <body>
     <div class="reveal">
@@ -24,8 +29,34 @@
             <section data-markdown>
               <textarea data-template>
 
-                <!-- Tema Ramas, págs. 64 -  -->
+                <!-- Tema Ramas, págs. 64 - 91 -->
                 # Ramas en Git
+
+                Las ramas son versiones (identificador / nombre único) que se pueden tener en paralelo en un
+                repositorio, tienen estas características:
+
+                - Puedes tener tantas como necesites
+                - Se crean a partir de un commit
+                - Se pueden fusionar con otras ramas
+
+                Sirven para mantener versiones o añadir nuevas funcionalidades
+                y para trabajar en equipo.
+
+                ---
+
+                ![diagrama de ramas en Git](./diagrama_ramas.png)
+                
+                ---
+
+                # Ejemplo 1: trabajando con dos ramas
+                
+                ![diagrama de ramas de Git School 1](./diagrama_ramas_git_school_1.png)
+
+                ---
+                
+                # Ejemplo 2: fast-forward 
+                
+                ![diagrama de ramas de Git School 2](./diagrama_ramas_git_school_2.png)
 
                 ---
 
