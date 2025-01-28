@@ -35,16 +35,38 @@
                 ---
 
                 # ¿Qué es SSH?
+
+                Es un protocolo seguro (encriptado) que sirve para conectar con 
+                una máquina remota o en red por Internet o red local.
+
+                - Permite trabajar con terminal
+                - VS Code permite abrir las carpetas y archivos para trabajes como
+                en local pero conectado a la máquina remota
+                - SSH es un estándar de la industria
                 
                 ---
 
                 # ¿Por qué usamos SSH?
+
+                - Es conveniente a la hora de conectar con cualquier tipo de máquinas
+                que necesitemos para trabajar
+                - En el caso de Github, se usa para autenticarnos desde nuestro ordenador
+                y así no tenemos que poner contraseñas
+                - Es más seguro => la llave solo se puede guardar si tienes acceso
+                al servidor o máquina o a la cuenta de Github 
+
                 ---
 
                 # Buenas noticias con VS Code y SSH
+
+                - Para conectarnos a máquinas remotas hay una extensión `ms-vscode-remote.remote-ssh` 
+                (Remote - SSH de Microsoft)
+                - Se puede abrir VS Code en una máquina remota de la misma forma que en local
+                - Puedes replicar tu forma de trabajo en otra máquina (virtual o física)
+
                 ---
 
-                # Pasos para generar la llave SSH
+                ### Pasos para generar la llave SSH
 
                 1. Abrir terminal (CMD en Windows)
                 2. `ssh-keygen` -> Enter hasta el final
@@ -55,6 +77,22 @@
                 ---
 
                 ![Añadir llave SSH en Github](./ssh/añadir-ssh-github.png)
+
+                ---
+
+                # Comprobación de configuración correcta de SSH con Github
+
+                ```bash
+                ssh git@github.com
+                ```
+
+                En la respuesta debe estar vuestro nombre de usuario de Github.
+
+                ---
+
+                ![Comprobación de conexión SSH con Github](./ssh/comprobacion-conexion-github.png)
+
+                ---
     
               </textarea>
             </section>
