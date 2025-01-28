@@ -24,8 +24,6 @@
                 <small>2025</small>
             </section>
 
-            <!-- Slide 1 -->
- 
             <section data-markdown>
               <textarea data-template>
 
@@ -33,8 +31,31 @@
                  desde pág 132 -  -->
                 # SSH
 
+                <!-- Slides -->
                 ---
+
+                # ¿Qué es SSH?
                 
+                ---
+
+                # ¿Por qué usamos SSH?
+                ---
+
+                # Buenas noticias con VS Code y SSH
+                ---
+
+                # Pasos para generar la llave SSH
+
+                1. Abrir terminal (CMD en Windows)
+                2. `ssh-keygen` -> Enter hasta el final
+                3. Buscar en la salida ruta a `id_rsa.pub` -> importante: debe acabar en `.pub`
+                4. Abrimos con VS Code: `code <ruta anterior>.pub`
+                5. Pegamos esta llave pública en https://github.com/settings/ssh/new
+
+                ---
+
+                ![Añadir llave SSH en Github](./ssh/añadir-ssh-github.png)
+    
               </textarea>
             </section>
 
