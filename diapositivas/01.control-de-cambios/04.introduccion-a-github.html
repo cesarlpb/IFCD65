@@ -209,6 +209,30 @@
 
                 # Solución de problemas: git pull y git push
 
+                - Normalmente, hay un conflicto de merge cuando una de las versiones
+                (local o remota) no coincide con la otra
+                - Es posible que un archivo o varios tengan cambios que no se 
+                pueden resolver automáticamente -> en la misma(s) línea(s) cada 
+                archivo pone algo distinto
+
+                Si es porque tenemos cambios pendientes en local:
+
+                ```bash
+                git stash
+                git pull
+                git stash apply 0 # aplicar los cambios encima de la actualización
+                ```
+                ---
+
+                ### git stash (parte 1)
+                
+                ![Ejemplo de uso de git stash](./github/git-pull-con-conflictos-1.png)
+
+                ---
+                ### git stash (parte 2)
+
+                ![Ejemplo de uso de git stash](./github/git-pull-con-conflictos-2.png)
+
                 ---
 
                 # Trabajo en Equipo: Pull Requests
