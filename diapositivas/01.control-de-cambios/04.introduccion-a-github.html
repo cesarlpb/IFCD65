@@ -31,10 +31,108 @@
 
                 <!-- Tema Trabajo con Git de forma remota (con Github) 
                  desde pág 108 - 131 -->
-                # Github
+                # ¿Qué es Github?
                 <!-- 108  -->
-                ---
+
+                - Github es una empresa y un servicio en la nube para alojar 
+                proyectos que suelen ser de código
+                - Subir proyectos es gratis: puedes crear repositorios públicos 
+                y privados de forma ilimitada
+                - [Github](https://github.com/) es la principal nube de 
+                alojamiento de código a nivel mundial, sus alternativas son: 
+                [Gitlab](https://about.gitlab.com/) 
+                y 
+                [Bitbucket](https://bitbucket.org/)
+                - Hay alternativas open source, como [Gitea](https://about.gitea.com/)
                 
+                ---
+
+                # Repositorios
+
+                - Igual que en git, la unidad base para trabajar en Github es un 
+                repositorio
+                - Un proyecto puede tener uno o más repositorios. Es habitual
+                separar el `front-end` del `back-end` y de otras áreas
+                
+                ## Visibilidad
+
+                - **Público:** lo puede ver (y leer) cualquier usuario de Github
+                - **Privado:** solo pueden interactuar usuarios con permiso 
+                previamente invitados
+                
+                --- 
+
+                # Licencias
+
+                Si bien los repositorios públicos los puede leer cualquier persona
+                si vamos a dedicar "mucho tiempo" a un proyecto se recomienda
+                añadir una licencia para aclarar las normas de uso en la comunidad.
+
+                En un repositorio privado, la licencia puede ser más opcional 
+                y se comparte con usuarios determinados.
+
+                - [Repositorio con plantillas de licencias](https://github.com/licenses/license-templates)
+                - Es suficiente con crear un archivo `LICENSE` con el contenido 
+                adaptado al proyecto
+
+                ---
+
+                # Crear nuevo repositorio en Github
+
+                Abrimos la página [github.com/new](https://github.com/new/) o [repo.new](https://new.new/)
+                y rellenamos el formulario con los datos del repositorio:
+
+                - **Nombre:** sin espacios ni caracteres especiales (usad `-` o `_` o mayúsculas)
+                - Descripción (opcional)
+                - **Acceso:** público o privado
+                - Añadir `README.md` es opcional -> si no lo marcas aparecen después comandos para clonar
+                - Añadir `.gitignore` (opcional)
+                - Añadir licencia
+                
+                ---
+                # Formulario para crear repositorio
+
+                ![Formulario creación de repositorio](./github/repo.new.png)
+                ---
+
+                # Clonar repositorio: git clone
+
+                - HTTPS (solo públicos):
+                ```bash
+                  git clone <https://github.com/<username>/<repositorio>>
+                ```
+                - SSH (públicos y privados):
+                ```bash
+                  git clone <git@github.com:<username>/<repositorio>.git
+                ```
+
+                **Las urls en < ... > en ambos casos se copian del repositorio**
+                ---
+                # URLs para clonar repositorios
+
+                ![URLs para git clone en Github](./github/urls-git-clone.png)
+                ---
+
+                # Sincronizar con remote: git pull
+
+                ---
+
+                # Subir cambios a remote: git push
+
+                ---
+
+                # Flujo de Trabajo en Remoto con Github
+
+                ---
+
+                # Trabajo en Equipo: Pull Requests
+
+                ---
+
+                # Colaborar con Proyectos: Forks
+
+                ---
+
               </textarea>
             </section>
 
