@@ -59,8 +59,8 @@
                 - **Público:** lo puede ver (y leer) cualquier usuario de Github
                 - **Privado:** solo pueden interactuar usuarios con permiso 
                 previamente invitados
+                ---
                 
-                --- 
 
                 # Licencias
 
@@ -75,9 +75,10 @@
                 - Es suficiente con crear un archivo `LICENSE` con el contenido 
                 adaptado al proyecto
 
+
                 ---
 
-                # Crear nuevo repositorio en Github
+                ### Crear nuevo repositorio en Github
 
                 Abrimos la página [github.com/new](https://github.com/new/) o [repo.new](https://new.new/)
                 y rellenamos el formulario con los datos del repositorio:
@@ -90,7 +91,7 @@
                 - Añadir licencia
                 
                 ---
-                # Formulario para crear repositorio
+                ### Formulario para crear repositorio
 
                 ![Formulario creación de repositorio](./github/repo.new.png)
                 ---
@@ -113,8 +114,27 @@
                 ![URLs para git clone en Github](./github/urls-git-clone.png)
                 ---
 
-                # Sincronizar con remote: git pull
+                <!-- Hasta aquí págs 108 - 116 -->
 
+                ### Sincronizar con remote: git pull
+
+                - `git pull` actualiza el repositorio local con todas los cambios
+                nuevos que tenga el repositorio asociado en remoto (en Github)
+                - Si queremos especificar la rama `main` usamos:
+                
+                ```bash
+                    git pull origin main
+                ```
+
+                - `git pull` ejecuta `git fetch` y `git merge`
+                  - Si solo queréis bajar los cambios sin fusionar en rama local -> `git fetch`
+                  - Después, tendrías que hacer merge desde `main`: `git merge remotes/origin/main`
+                
+                - Si queremos los cambios en la rama local para trabajar -> `git pull`
+                  - Como `git pull` hacer un merge de remotes a rama local => puede causar conflicto de merge
+
+                ---
+                    ![Ejemplo de git pull en repositorio IFCD65](./git-pull.png)
                 ---
 
                 # Subir cambios a remote: git push
