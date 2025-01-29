@@ -1,5 +1,5 @@
 <!-- Grabación del día 29.01 entre las 11:15 - 11:45 -->
-# **📌 Guion: Introducción a Git (30 min)**  
+# **📌 Guión: Introducción a Git (30 min)**  
 
 ## **1️⃣ ¿Qué es Git? (5 min)**
 📌 **Objetivo:** Explicar qué es Git y por qué es importante.  
