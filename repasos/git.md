@@ -1,3 +1,4 @@
+<!-- Grabación del día 29.01 entre las 11:15 - 11:45 -->
 # **📌 Guion: Introducción a Git (30 min)**  
 
 ## **1️⃣ ¿Qué es Git? (5 min)**
@@ -46,15 +47,21 @@ git status
 ```
 ✅ **Añadir archivos a Git:**  
 ```bash
-echo "Hola Mundo" > index.txt
+echo "Hola Mundo" > index.txt # puedes abrirlo con Vs Code y escribir algo
 git add index.txt
 git commit -m "Añadir index.txt"
 ```
 ✅ **Explicación:**  
-- `git init`: Inicia un repositorio vacío.  
-- `git add`: Prepara archivos para el commit.  
+- `git init`  : Inicia un repositorio vacío.  
+- `git add`   : Prepara archivos para el commit.  
 - `git commit`: Guarda los cambios con un mensaje.  
 
+---
+## Estados de Git y Staging
+
+```bash
+  Sin seguimiento -> staging (en preparación) -> Confirmado (commit en historial)
+```
 ---
 
 ## **4️⃣ Uso de Branches (5 min)**
@@ -68,6 +75,14 @@ git merge nombre-rama    # Fusionar la rama con la principal
 git branch -d nombre-rama # Eliminar una rama
 ```
 💡 **Consejo:** Explicar cómo las ramas permiten trabajar en paralelo sin afectar la versión principal del código.  
+
+---
+
+## Tipos de merge (fusión de ramas):
+
+- **Fast-forward:** adelanta el historial al último commit
+- **No Fast-forward:** crear un commit nuevo para fusionar y coloca "Merge de branch..."
+- **Squash:** permite juntar todos los cambios en un commit que puedes editar
 
 ---
 
@@ -94,12 +109,14 @@ __pycache__/
 📌 **Objetivo:** Resolver dudas y reforzar los conceptos clave.  
 
 ✅ **Resumen rápido:**  
-- `git init` → Crear repo  
-- `git status` → Ver estado  
-- `git add` → Preparar cambios  
+- `git init`    → Crear repo  
+- `git status`  → Ver estado  
+- `git add`     → Preparar cambios: `git add .` añade todo
 - `git commit -m "Mensaje"` → Guardar cambios  
-- `git branch` → Manejo de ramas  
-- `.gitignore` → Ignorar archivos innecesarios  
+- `git log`     → Ver el historial de commits, `git log --name-only` (muestra archivos)
+- `git branch`  → Ver las ramas, `git branch <rama>` crea rama nueva 
+  - `git checkout <rama>` → cambiar de rama
+- `.gitignore`  → Ignorar archivos innecesarios  
 
 **💬 Preguntas:**  
 - ¿Dudas sobre la configuración o comandos básicos?  
