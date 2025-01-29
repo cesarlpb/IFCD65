@@ -1,4 +1,5 @@
-# **📌 Guion: Introducción a GitHub (30 min)**  
+<!-- Grabación del día 29.01 entre las 12:00 - 12:30 -->
+# **📌 Guión: Introducción a GitHub (30 min)**  
 
 ## **1️⃣ ¿Qué es GitHub? (5 min)**
 📌 **Objetivo:** Explicar qué es GitHub y por qué se usa con Git.  
@@ -34,10 +35,16 @@ code ~/.ssh/id_rsa.pub
 1. Ir a **GitHub > Settings > SSH and GPG keys**.  
 2. Click en **New SSH Key** y pegar la clave pública.  
 
+![Guardar llave pública en Github](./image.png)
+
 ✅ **Verificar conexión:**  
+
 ```bash
 ssh -T git@github.com
 ```
+
+![Comprobación de config de SSH](image-1.png)
+
 💡 **Consejo:** Explicar la diferencia entre clave pública y privada.  
 
 ---
@@ -45,7 +52,8 @@ ssh -T git@github.com
 ## **3️⃣ Subiendo un repositorio local a GitHub (10 min)**
 📌 **Objetivo:** Enseñar cómo conectar un repositorio local con GitHub.  
 
-✅ **Crear un repositorio en GitHub (sin `README.md`).**  
+✅ **Crear un repositorio en GitHub (sin `README.md`).**  => [repo.new/](htpps://repo.new) o [Crear repositorio nuevo](https://github.com/new/)
+
 
 ✅ **Conectar repositorio local con GitHub:**  
 ```bash
@@ -67,6 +75,15 @@ cd repo
 ```
 💡 **Consejo:** Explicar la diferencia entre `git clone` y `git pull`.  
 
+---
+
+## Flujo de trabajo recomendado para nuevo repositorio
+
+```bash
+  1. Crear repositorio en Github
+  2. Clonar con SSH
+  3. Empezar a trabajar (pull, push...)
+```
 ---
 
 ## **5️⃣ Actualizar cambios entre local y remoto (5 min)**
