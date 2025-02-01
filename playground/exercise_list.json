@@ -47,7 +47,7 @@
       "10. Blog con estructura de artículos"  
   ]},
   "CSS": {
-    "basico": [
+    "básico": [
         "01. Aplicando Selectores",
         "02. Personalizando Fondos",
         "03. Bordes y Estilos",
@@ -63,7 +63,7 @@
       
     ]},
   "JS": {
-    "basico": [],
+    "básico": [],
     "intermedio": []
   }
 }
