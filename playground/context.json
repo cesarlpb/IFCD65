@@ -1,8 +1,0 @@
-{
-    "topic": "<tema>",
-    "level": "<nivel>",
-    "exercise": "<título del ejercicio>",
-    "updated": "yyyy-mm-dd hh:mm:ss",
-    "author": "<autor>",
-    "email": "<email>"
-}
