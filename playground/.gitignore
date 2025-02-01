@@ -196,5 +196,6 @@ pyrightconfig.json
 *.log
 
 # Archivos específicos de Poetry
-#
-#
+# Dejo de seguir context para que se quede como un templates en el repositorio
+# se editará solamente mediante el comando `playground start`:
+context.json
