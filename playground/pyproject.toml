@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "playground"
+version = "0.1.0"
+description = "Playground para practicar front-end: HTML, CSS, JS, y más! 🔥"
+authors = ["César <cesarlpb@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+# Si solo queremos usar poetry para gestionar dependencias, habilitar:
+# package-mode = false # no permite usar pip install --editable .
+# packages = [
+#     { include = "playground" }
+# ]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click  = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+playground = "playground.main:cli" # entry point -> CLI
