@@ -4,7 +4,7 @@ import os
 from playground import commands
 from datetime import datetime
 
-VERSION = "0.1.0"  # Define la versión de tu aplicación
+VERSION      = "0.1.0"         # Define la versión de tu aplicación
 CONTEXT_FILE = "context.json"  # Archivo para guardar el contexto
 
 
@@ -18,7 +18,6 @@ def cli() -> None:
 
 # Comando "start" para inicializar el contexto
 @cli.command()
-# @click.option("--list-path", type=click.Path(exists=True), required=True, help="Path al JSON con la lista de ejercicios")
 @click.option(
     "--list-path", 
     type=click.Path(exists=True), 
@@ -61,10 +60,7 @@ def start(list_path):
         # Mostrar ejercicios disponibles y pedir selección
         click.echo(f"Ejercicios disponibles para {topic} ({level if 'level' in locals() else 'General'}):")
         for idx, exercise in enumerate(exercises, start=1):
-          # if exercise[:2].isdigit() and exercise[2] == ".":
-          #     click.echo(f"{exercise}")
-          # else:
-              click.echo(f"[{idx:<2}] - {exercise}")
+            click.echo(f"[{idx:<2}] - {exercise}")
 
         exercise_choice = click.prompt("Selecciona un número de ejercicio", type=int)
         if exercise_choice < 1 or exercise_choice > len(exercises):
