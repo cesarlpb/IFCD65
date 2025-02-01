@@ -1,0 +1,69 @@
+{
+  "Git": [
+    "00. Crear repositorio local",
+    "01. Git push en local",
+    "02. Git pull de un repositorio",
+    "03. Ramas (branches)",
+    "04. Resolver un bug con Git",
+    "05. Configuración de Git",
+    "06. gitignore",
+    "07. Deshacer cambios en Git",
+    "08. Conflicto de merge en Git",
+    "09. Uso de tags en Git",
+    "10. git diff",
+    "99. Más ejercicios (libre)"
+],
+  "Github": [
+    "00. Libro en Github", 
+    "01. git clone",
+    "02. git pull y git push", 
+    "03. Forks en Github",
+    "04. Pull request en Github",
+    "05. Colaborar en Open Source (libre)"
+  ],
+  "HTML": {
+    "básico": [
+    "01. Crear 'Mi primera página' en HTML", 
+    "02. Página con título, encabezado y párrafo", 
+    "03. Contenido con título y párrafo",
+    "04. Contenido con enfatizado / cursiva",
+    "05. Página con enlaces",
+    "06. Página con lista y títulos",
+    "07. Página con lista ordenada",
+    "08. Página web con imagen",
+    "09. Imagen con enlace",
+    "10. Página web con tabla"
+  ], 
+  "intermedio": [
+      "01. Formulario de contacto",
+      "02. Embebiendo videos de YouTube",
+      "03. Tabla avanzada con celdas combinadas",
+      "04. Menú de navegación con enlaces internos",
+      "05. Galería de imágenes con enlaces",
+      "06. Página con contenido semántico",
+      "07. Formulario de registro con validaciones",
+      "08. Página con audio y subtítulos",
+      "09. Página con iframe y Google Maps",
+      "10. Blog con estructura de artículos"  
+  ]},
+  "CSS": {
+    "basico": [
+        "01. Aplicando Selectores",
+        "02. Personalizando Fondos",
+        "03. Bordes y Estilos",
+        "04. Margen y Espaciado",
+        "05. Tamaño de Elementos",
+        "06. Uso de Outline",
+        "07. Formateo de Texto",
+        "08. Uso de Web Fonts",
+        "09. Estilizando Enlaces",
+        "10. Creando una Lista Estilizada"
+    ],
+    "intermedio": [
+      
+    ]},
+  "JS": {
+    "basico": [],
+    "intermedio": []
+  }
+}
