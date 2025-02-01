@@ -1,0 +1,12 @@
+[submodule "modules/git"]
+	path = modules/git
+	url = git@github.com:cesarlpb/learn-git.git
+[submodule "modules/github"]
+	path = modules/github
+	url = git@github.com:cesarlpb/learn-github.git
+[submodule "modules/html"]
+	path = modules/html
+	url = git@github.com:cesarlpb/learn-html.git
+[submodule "modules/css"]
+	path = modules/css
+	url = git@github.com:cesarlpb/learn-css.git
