@@ -7,6 +7,9 @@ from datetime import datetime
 VERSION      = "0.1.0"         # Define la versión de tu aplicación
 CONTEXT_FILE = "context.json"  # Archivo para guardar el contexto
 
+# Valores de placeholder para autor y email:
+PLACEHOLDER_AUTHOR = "<autor>"
+PLACEHOLDER_EMAIL  = "<email>"
 
 # Grupo principal de comandos
 @click.group()
@@ -76,10 +79,10 @@ def start(list_path):
 
         # Obtener autor y email si no están en el archivo de contexto
         author = context.get("author")
-        if not author:
+        if not author or author == PLACEHOLDER_AUTHOR:
             author = click.prompt("Introduce el autor (se puede dejar en blanco)")
         email = context.get("email")
-        if not email:
+        if not email or email == PLACEHOLDER_EMAIL:
             email = click.prompt("Introduce el email (se puede dejar en blanco)")
 
         # Añadir fecha actual y guardar contexto
