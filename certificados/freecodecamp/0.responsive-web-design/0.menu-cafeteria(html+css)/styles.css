@@ -1,0 +1,37 @@
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Añadimos bordes para ver article y p */
+article {
+  /* border: 1px solid brown; */
+  border: 0;
+}
+article > p {
+  /* border: 1px dotted black; */
+  border: 0;
+}
+.flavor {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+/* solo los p en elemento de clase item */
+.item p {
+  display: inline-block;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="menu">
+      <main>
+        <h1>CAMPER CAFE</h1>
+        <p>Est. 2020</p>
+        <!-- Un <section> es una sección o área de la página que trata sobre un tema, en 
+          este caso, el menú de cafés -->
+        <!-- En esta estructura de la página un section tiene varios articles -->
+        <section>
+          <h2>Coffee</h2>
+          <!-- Un <article> es una etiqueta semántica que agrupa información relacionada -->
+          <article class="item">
+            <!-- Truco: al colocar ambos <p> en la misma fila, el navegador no 
+              rellena un espacio en blanco que hace que desborden del 100% y así salen en 
+              la misma fila ambos elementos -->
+            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+          </article>
+
+          <!-- Emmet 
+          (article>p*2)*4
+
+          Más info: https://www.freecodecamp.org/news/write-html-css-faster-with-emmet-cheat-codes/
+          -->
+          
+          <!-- Multi cursor: Alt + click izquierdo -->
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+          </article>
+
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+          </article>
+
+          <article class="item">
+            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+          </article>
+
+          <article class="item">
+            <p class="flavor">Mocha</p><p class="price">4.50</p>
+          </article>
+
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
