@@ -1,0 +1,25 @@
+name: Ejecutar tests en archivos HTML
+
+on:
+  pull_request:
+    branches:
+      - playgroud
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Install Dependencies
+        run: |
+          pip install -r scripts/requirements.txt
+
+      - name: Run Python Script
+        run: python scripts/test_html_are_valid.py playground/playground/html/básico/
