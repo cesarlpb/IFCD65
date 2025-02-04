@@ -4,6 +4,7 @@ body {
   background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
   padding: 20px;
 }
+/* Final de estilos general */
 
 /* Contenido principal en <main> */
 
@@ -110,8 +111,9 @@ article > p {
 .bottom-line {
   margin-top: 25px;
 }
+/* Final del main */
 
-/* FOOTER */
+/* Footer */
 footer {
   font-size: 14px;
 }
@@ -140,5 +142,4 @@ simétrico con el del inicio */
 .address {
   margin-bottom: 5px;
 }
-
-
+/* Final del footer */
