@@ -1,5 +1,21 @@
 body {
+  font-family: sans-serif;
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
+
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}
+
+.established {
+  font-style:italic;
+}
+
+h1, h2 {
+  font-family: Impact, serif;
 }
 
 h1, h2, p {
@@ -7,7 +23,13 @@ h1, h2, p {
 }
 
 .menu {
+  /* Colocamos el ancho como el 80% del parent 
+  que es el body en este caso */
   width: 80%;
+  /* Como en pantallas muy anchas salen los 
+  precios demasiado lejos de los productos, colocamos 
+  un ancho máximo de 500px */
+  max-width: 500px;
   background-color: burlywood;
   /* margin => margen o espacio externo */
   margin-left: auto;
@@ -32,6 +54,12 @@ h1, h2, p {
   padding: 20px; /* esta línea sobreescribe a las anteriores de dirección */
   /* al inspeccionar el div.menu aparecerá en el navegador que las anteriores
   líneas han sido "tachadas" ==> sobreescritas */
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
 }
 
 /* Añadimos bordes para ver article y p */
