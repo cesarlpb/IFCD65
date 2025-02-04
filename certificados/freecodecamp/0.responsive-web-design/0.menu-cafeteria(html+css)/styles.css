@@ -1,10 +1,16 @@
+/* General */
 body {
   font-family: sans-serif;
-  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
+  padding: 20px;
 }
+
+/* Contenido principal en <main> */
 
 h1 {
   font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 h2 {
   font-size: 30px;
@@ -56,6 +62,17 @@ h1, h2, p {
   líneas han sido "tachadas" ==> sobreescritas */
 }
 
+/* Estilos para icono del café y postres */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* El margen negativo hace que dos elementos se acerquen
+  pero si colocamos un número excesivo se pueden superponer los elementos...
+  Es más recomendable usar márgenes positivos o 0 en elementos adyacentes */
+  margin-top: -25px;
+}
+
 hr {
   height: 2px;
   background-color: brown;
@@ -83,4 +100,43 @@ article > p {
 /* solo los p en elemento de clase item */
 .item p {
   display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* Por defecto, suele ser font-size de 16 px */
+  font-size: 18px;
+}
+
+/* Creamos un selector para una clase para el segundo hr */
+.bottom-line {
+  margin-top: 25px;
+}
+
+/* FOOTER */
+footer {
+  font-size: 14px;
+}
+/* Color por defecto en negro */
+a {
+  color: black;
+}
+/* Estado visitado (haber hecho click) como gris */
+a:visited {
+  color: black;
+}
+/* Cursor sobre el enlace => hover en color marrón */
+a:hover {
+  color: brown;
+}
+/* Estado active ==> mientras se tiene el ratón presionado */
+a:active {
+  color: brown;
+  /* Colocamos algunos efectos para resaltar el click: */
+  font-size: 16px;
+  font-weight: 400;
+  top:1px;
+}
+/* Usamos este selector para hacer el espacio del final del documento
+simétrico con el del inicio */
+.address {
+  margin-bottom: 5px;
 }
