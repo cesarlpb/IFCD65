@@ -43,7 +43,7 @@ Listado de recursos educativos por temas.
 ## Front-end
 
 ```bash
-  # Diagrama Mermaid
+  # Diagrama Mermaid -> online editor: https://mermaid.live/edit
   timeline
       title Roadmap de Frontend (12 semanas)
       section Control de Versiones
