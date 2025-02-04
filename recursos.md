@@ -67,6 +67,6 @@ Listado de recursos educativos por temas.
 
 ![Roadmap Front-end Web developer IFCD65](image.png)
 
-### Certificados de FreeCodeCamp
+### Certificados de FreeCodeCamp
 
 - [Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
