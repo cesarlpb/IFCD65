@@ -6,6 +6,7 @@ Listado de recursos educativos por temas.
 
 - [Libro de HTML para descarga (ENG)](https://books.goalkicker.com/HTML5Book/)
 - Online: [HTML en W3schools (ENG // disponible traducción automática en navegador)](https://www.w3schools.com/html/default.asp)
+- Formularios: [documentación de inputs y atributos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
 ## CSS
 
