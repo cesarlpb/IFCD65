@@ -10,6 +10,52 @@ body {
   por códigos de color -> números */
   background-color: #1b1b32; /* haciendo click en la paleta se cambia a RGB, etc. */
   color: #f5f6f7;
+
+  font-family: "Tahoma";
+  font-size: 16px;
+}
+
+/* Centrar cajas y el texto: */
+h1, p {
+  /* Centrado de caja: */
+  margin: 1em auto; /* top/bottom left/right */
+  /* Centrado de texto: */
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw; /* es el 60% del ancho del viewport -> se calcula automáticamente */
+}
+
+fieldset {
+  border: 0;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+/* Pseudo selector con : */
+/* Selecciona el último fieldset de la página */
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+fieldset:last-of-type{
+  border-bottom: none;
+}
+
+input, textarea, select {
+  width: 100%;
+  /* se aplica en todas las direcciones: */
+  /* margin: 10px; */
+  /* se aplica top-bottom y left-right: */
+  /* margin: 10px 20px; */
+  /* se aplica top left-right bottom: */
+  /* margin: 10px 20px 30px; */
+  /* se aplica en sentido horario: top -> right -> bottom -> left */
+  margin: 10px 0 0 0;
 }
 
 label {

@@ -15,43 +15,50 @@
       
       <fieldset>
         <legend>Personal data (required)</legend>
-        <label for="first-name">Enter Your First Name: <input id="first-name" type="text" minlength="3" required></label>
-        <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" required></label>
-        <label for="email">Enter Your Email: <input id="email" type="email" minlength="8" required></label>
-        <label for="new-password">Create a New Password: <input id="new-password" type="password" pattern="[a-z0-5]{8,}" required></label>
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" minlength="3" required></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required></label>
+        <label for="email">Enter Your Email: 
+            <input id="email" name="email" type="email" minlength="8" autocomplete="username" required></label>
+        <label for="new-password">Create a New Password: 
+          <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" autocomplete="current-password" required></label>
         <small>Las contraseñas deben ser de al menos 8 caracteres y dígitos del 0 al 5</small>
       </fieldset>
 
       <!-- Tipos de usuarios: se elige uno -->
       <fieldset>
         <legend>Account type (required)</legend>
-        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked /> Personal</label>
-        <label for="business-account"><input id="business-account" type="radio" name="account-type" /> Business</label>
+        <label for="personal-account"><input id="personal-account" class="inline" type="radio" name="account-type" checked /> Personal</label>
+        <label for="business-account"><input id="business-account" class="inline" type="radio" name="account-type" /> Business</label>
       </fieldset>
       
       <!-- Foto de perfil del usuario -->
       <fieldset>
         <legend>Profile picture (optional)</legend>
         <!-- Subir archivo -->
-        <label>Upload a profile picture: <input type="file"></label>
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" name="profile-picture" type="file"></label>
         <!-- input de tipo numérico -->
-        <label>Input your age (years): <input type="number" min="13" max="120"/></label>
+        <label for="age">Input your age (years): <input id="age" name="age" type="number" min="13" max="120"/></label>
         <!-- Dropdown: input para elegir opción -->
-         <label for="">How did you hear about us?
-         <select name="" id="">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
+         <label for="referrer">How did you hear about us?
+         <select id="referrer" name="referrer">
+          <option value="">(select one)</option>
+          <option value="1">freeCodeCamp News</option>
+          <option value="2">freeCodeCamp YouTube Channel</option>
+          <option value="3">freeCodeCamp Forum</option>
+          <option value="4">Other</option>
          </select>
+        </label>
+
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
         </label>
       </fieldset>
 
       <br>
 
       <!-- Términos y condiciones -> checkbox para marcar -->
-      <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required> I accept the 
+      <label for="terms-and-conditions">
+        <input id="terms-and-conditions" name="terms-and-conditions" type="checkbox" required> I accept the 
         <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and conditions</a>
       </label>
 
