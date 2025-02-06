@@ -28,6 +28,7 @@ form {
   max-width: 500px;
   min-width: 300px;
   width: 60vw; /* es el 60% del ancho del viewport -> se calcula automáticamente */
+  padding-bottom: 2em;
 }
 
 fieldset {
@@ -56,10 +57,79 @@ input, textarea, select {
   /* margin: 10px 20px 30px; */
   /* se aplica en sentido horario: top -> right -> bottom -> left */
   margin: 10px 0 0 0;
+  /* aplicamos min-height a todos los campos
+  de input, textarea y select */
+  min-height: 2em;
+}
+input,
+textarea {
+  /* colocamos color oscuro en inputs, textarea y select
+  para que se vea en "dark" mode el form */
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  /* color blanco -> #fff o #ffffff para los textos 
+  en campos del form */
+  color: #ffffff;
+  
+}
+
+.radio-btn {
+  border: 0;
+}
+
+/* Radio buttons -> hacemos que no tengan el ancho del 100%
+unset es para resetear al valor por defecto */
+.inline {
+  width: unset;
+  margin-left: 0;
+  margin-right: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding: 0;
+  border: 0;
+  vertical-align: middle;
 }
 
 label {
   display: block;
   /* border: 1px solid lightgray; */
   margin: 0.5rem 0; /* colocamos 0.5rem que serían 8px */
+}
+
+/* Estilos del botón de enviar (submit) */
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+/* Estilos para el input de subir archivo -> type="file" */
+input[type="file"]{
+  margin: 1em auto;
+  padding: 1px 2px;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  /* border: 1px solid white; */
+}
+
+/* usamos esta clase "link" para darle color
+a la etiqueta a */
+.link, a {
+  color: #dfdfe2;
+}
+/* Los estados de enlaces también habría que hacerlos
+contrastar con el fondo oscuro: */
+a:visited {
+  color: gray;
+}
+/* Colores de Tailwind v3: https://v3.tailwindcss.com/docs/customizing-colors */
+a:hover {
+  color: #cbd5e1;
 }
